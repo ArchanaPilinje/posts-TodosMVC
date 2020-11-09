@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+
+	<class name="com.mphasis.app.crud.Post" table="posts">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="body"></property>
+		<property name="title"></property>
+	</class>
+	
+		<class name="com.mphasis.app.crud.ToDos" table="todos">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="title"></property>
+		<property name="completed"></property>
+	</class>
+
+</hibernate-mapping>  
